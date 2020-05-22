@@ -1,0 +1,35 @@
+{
+  "name": "microverse-html-capstone-project",
+  "version": "0.1.0",
+  "description": "Microverse's HTML/CSS capstone project",
+  "main": "index.js",
+  "scripts": {
+    "lintjs": "eslint .",
+    "validate-html": "html-validator --quiet --file index.html",
+    "lint": "npm run validate-html && npm run lintjs",
+    "build:css": "stylus -c -m assets/styl/main.styl -o assets/css",
+    "build:css:watch": "stylus -c -m -w assets/styl/main.styl -o assets/css",
+    "build": "npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WinterCore/microverse-html-capstone-project.git"
+  },
+  "keywords": [
+    "microverse",
+    "capstone"
+  ],
+  "author": "WinterCore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WinterCore/microverse-html-capstone-project/issues"
+  },
+  "homepage": "https://github.com/WinterCore/microverse-html-capstone-project#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "html-validator-cli": "^7.0.0",
+    "stylus": "^0.54.7"
+  }
+}
