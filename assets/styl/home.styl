@@ -1,0 +1,37 @@
+main
+    .search-box
+        height 50vh
+        min-height 400px
+        background-color primary-color
+        background url(../images/logo-dark.svg) 18% 50%/600px no-repeat primary-color;
+        flex-column(center, center)
+        .search-box-heading
+            color white
+            flex-column(center, center)
+            h1
+                font-size 55px
+        form
+            width 100%
+            max-width breakpoint-xl
+            padding 0 16px
+            margin-top 50px
+            flex(center)
+            & > *
+                margin 0 2px
+                flex-grow 1
+            button
+                margin-left 12px
+                background secondary-color
+                height input-height
+                line-height input-height
+                color light-gray
+                &:hover, &:focus
+                    background lighten(secondary-color, 5%)
+            @media (max-width: breakpoint-md)
+                &
+                    flex-column()
+                    & > *
+                        margin 2px 0
+                    button
+                        margin-left 0
+                        margin-top 8px
