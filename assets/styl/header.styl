@@ -1,0 +1,78 @@
+logo-size = header-height - 28px
+logo-mobile-size = header-mobile-height - 28px
+
+header
+    height header-height
+    background secondary-color
+
+    .header-inner
+        max-width 1200px
+        margin 0 auto
+        height 100%
+        padding 0 20px
+        flex(space-between)
+    .header-left
+        flex-vertically-centered()
+        .logo
+            height logo-size
+            width logo-size
+            flex-basis logo-size
+            flex-shrink 0
+            flex-vertically-centered()
+        .logo-text
+            font-weight bold
+            color #fff
+            font-size 22px
+            margin-left 8px
+        .nav
+            margin 0 20px
+            text-transform uppercase
+            font-size 14px
+            a
+                color light-gray
+                & + a
+                    margin-left 12px
+                &:hover
+                    color primary-color
+    .header-right
+        color #fff
+        .icon-outer
+            color light-gray
+            &:hover
+                color #fff
+            margin-right 30px
+        flex-vertically-centered()
+        .user
+            flex-vertically-centered()
+            .avatar
+                margin-left 16px
+                img
+                    width 42px
+                    height 42px
+                    border-radius 50%
+    a.button
+        text-transform uppercase
+
+
+    @media (max-width: breakpoint-lg)
+        .header-right
+            display none
+    
+    @media (max-width: breakpoint-md)
+        a.button
+            display none
+    @media (max-width: breakpoint-sm)
+        &
+            height header-mobile-height
+        .header-inner
+            padding 0 10px
+        .header-left
+            .logo
+                height logo-mobile-size
+                width logo-mobile-size
+                flex-basis logo-mobile-size
+            .logo-text
+                font-size 12px
+            .nav
+                font-size 10px
+                margin 0 8px

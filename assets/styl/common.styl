@@ -1,0 +1,28 @@
+.button
+    color #ffffff
+    background primary-color
+    height button-height
+    line-height button-height
+    font-size 14px
+    padding 0 24px
+    border none
+    cursor pointer
+    &:hover, &:focus
+        background darken(primary-color, 5%)
+
+.icon-outer
+    &.has-badge
+        position relative
+        .badge
+            border-radius 2px
+            color #fff
+            width 12px
+            height 12px
+            background primary-color
+            text-align center
+            line-height 12px
+            font-size 12px
+            position absolute
+            top -6px
+            right -6px
+            z-index 2
