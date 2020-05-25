@@ -9,6 +9,7 @@
     cursor pointer
     &:hover, &:focus
         background darken(primary-color, 5%)
+        outline 0
 
 .icon-outer
     &.has-badge
@@ -34,3 +35,72 @@ input, select
     padding 0 10px
     &:focus
         outline 0
+
+
+.pic-responsive
+    display block
+    width 100%
+    padding-bottom 100%
+    position relative
+    overflow hidden
+
+.pic-responsive img
+    position absolute
+    -moz-transform translate(-50%, -50%)
+    -ms-transform translate(-50%, -50%)
+    -webkit-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    left 50%
+    top 50%
+    height 100%
+    width auto
+    max-width none
+
+
+.container
+    max-width breakpoint-xl
+    margin 0 auto
+
+
+.carousel-outer
+    display grid
+    grid-template-columns 50px 1fr 50px
+    position relative
+    .carousel-items-outer
+        overflow hidden
+    .carousel-items
+        flex()
+        transition transform 0.2s ease-in-out
+    .carousel-arrow
+        flex-column(center, center)
+    .carousel-control
+        cursor pointer
+        width 40px
+        height 40px
+        border 1px solid #eee
+        text-align center
+        flex(center, center)
+        font-size 20px
+        border-radius 50%
+        color primary-color
+    &.scroller
+        grid-template-columns 1fr
+        .carousel-arrow
+            width 70px
+            background rgb(246,246,246);
+            height 100%
+            position absolute
+            z-index 10
+            top 50%
+            pointer-events none
+            transform translateY(-50%)
+            &.left
+                background linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(255,255,255,0) 100%);
+                left 0
+            &.right
+                background linear-gradient(-90deg, rgba(246,246,246,1) 0%, rgba(255,255,255,0) 100%);
+                right 0
+        .carousel-control
+            color secondary-color
+            border 0
+            pointer-events all

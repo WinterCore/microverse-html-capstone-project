@@ -16,8 +16,6 @@ header
         .logo
             height logo-size
             width logo-size
-            flex-basis logo-size
-            flex-shrink 0
             flex-vertically-centered()
         .logo-text
             font-weight bold
@@ -54,14 +52,14 @@ header
         text-transform uppercase
 
 
-    @media (max-width: breakpoint-lg)
+    @media (max-width breakpoint-lg)
         .header-right
             display none
     
-    @media (max-width: breakpoint-md)
+    @media (max-width breakpoint-md)
         a.button
             display none
-    @media (max-width: breakpoint-sm)
+    @media (max-width breakpoint-sm)
         &
             height header-mobile-height
         .header-inner
@@ -70,7 +68,6 @@ header
             .logo
                 height logo-mobile-size
                 width logo-mobile-size
-                flex-basis logo-mobile-size
             .logo-text
                 font-size 12px
             .nav

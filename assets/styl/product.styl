@@ -1,0 +1,101 @@
+.product
+    height 100%
+    margin 0 10px
+    h3
+        color primary-color
+        font-size 24px
+    p
+        color secondary-color
+    
+    h3, p, .product-actions
+        margin 12px 0
+    .product-details
+        flex-column(space-between)
+    .product-actions
+        .product-price
+            padding 0 20px
+            background primary-color
+            display inline-block
+            color #fff
+            border-radius 4px 0 0 4px
+            border-right 1px solid secondary-color
+        button
+            border-radius 0 4px 4px 0
+        .product-price, button
+            height product-actions-height
+            line-height product-actions-height
+    .product-feature
+        color lighten(secondary-color, 50%)
+        span
+            color secondary-color
+    .product-condition
+        color primary-color
+        font-weight bold
+    &.landscape
+        display grid
+        gap 20px
+        grid-template-columns 1fr 2fr
+        .pic-responsive
+            padding-bottom 0
+        @media (max-width breakpoint-md)
+            &
+                grid-template-columns 1fr
+            .pic-responsive
+                height 400px
+    &.portrait
+        border 1px solid white-gray
+        padding 20px
+        height 100%
+        background #fff
+        flex-column()
+        h3
+            color black
+            font-size 18px
+            font-family sub-font
+            margin-bottom 8px
+        .product-details
+            flex-grow 1
+        .product-condition
+            margin-bottom 15px
+        .product-footer
+            margin-top 8px
+            flex(space-between, center)
+            .product-price
+                color primary-color
+                font-weight bold
+                font-size 18px
+        .product-actions-dropdown
+            position relative
+            .dropdown-trigger
+                width 32px
+                height 32px
+                cursor pointer
+                flex(center, center)
+                border 1px solid white-gray
+                &:hover
+                    background black
+                    color primary-color
+            &:hover .dropdown-items
+                display block
+            .dropdown-items
+                display none
+                position absolute
+                z-index 15
+                bottom 32px
+                left 0
+                // left -(210px / 2 - 32px / 2)
+                width 210px
+                ul
+                    background white
+                    box-shadow 0 0 3px rgba(0, 0, 0, 0.6)
+                    border-radius 4px
+                    button
+                        background transparent
+                        color secondary-color
+                        width 100%
+                        border none
+                        height 40px
+                        line-height 40px
+                        &:hover
+                            background secondary-color
+                            color white
