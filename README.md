@@ -1,6 +1,19 @@
 # Microverse capstone project
 
-![screenshot](./app_screenshot.png)
+## Screenshots
+
+Homepage
+
+![screenshot](./app_screenshot1.png)
+
+<br />
+<br />
+<br />
+
+Search page
+<br />
+
+![screenshot](./app_screenshot2.png)
 
 This is a design implemenation of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX)
 
@@ -10,7 +23,7 @@ This is a design implemenation of [ZATTIX](https://www.behance.net/gallery/24796
 
 ## Live Demo
 
-[Live Demo Link](https://wintercore.github.io/microverse-html-capstone-project/)
+[Live Demo Link](http://raw.githack.com/WinterCore/microverse-html-capstone-project/develop/index.html)
 
 
 ## Getting Started
@@ -18,13 +31,15 @@ This is a design implemenation of [ZATTIX](https://www.behance.net/gallery/24796
 To get a local copy up and running follow these simple example steps.
 
 ### Usage
-- Just open the `index.html` file
+- Run `npm install`
+- Run `npm run build`
+- Open the `index.html` file
 
 ## Commands
-- `lintcss` Checks the css for any lint errors
-- `lintcss:fix` Checks the css for any lint errors and tries to fix what it can
 - `validate-html` Validate the structure of the HTML
 - `lintjs` Checks the javascript for any lint errors
+- `build:css` Compile the stylus code into css
+- `build:css:watch` Compile the stylus code into css and watch for changes
 
 Note: You need to do `npm install` before executing the commands above.
 
