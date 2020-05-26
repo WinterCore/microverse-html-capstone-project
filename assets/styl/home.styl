@@ -1,79 +1,40 @@
-main
-    .search-box
-        height 50vh
-        min-height 400px
-        background-color primary-color
-        background url(../images/logo-dark.svg) 18% 50%/600px no-repeat primary-color;
-        padding 0 16px
-        flex-column(center, center)
-        .search-box-heading
-            color white
-            flex-column(center, center)
-            h1
-                font-size 55px
-            p
-                text-align center
-        form
-            width 100%
-            max-width breakpoint-xl
-            margin-top 50px
-            flex(center)
-            & > *
-                margin 0 2px
-                flex-grow 1
-            button
-                margin-left 12px
-                background secondary-color
-                height input-height
-                line-height input-height
-                color light-gray
-                &:hover, &:focus
-                    background lighten(secondary-color, 5%)
-            @media (max-width breakpoint-md)
-                &
-                    flex-column()
-                    & > *
-                        margin 2px 0
-                    button
-                        margin-left 0
-                        margin-top 8px
-    .products-carousel-outer
-        border-bottom 1px solid white-gray
-        background white
-        .products-carousel
-            padding 26px 18px
-            h2
-                color light-gray
-                padding 0 50px
-                font-size 22px
-                margin-bottom 18px
-            @media (max-width breakpoint-md)
-                &
-                    padding 26px 5px
-    .products-multi-carousel
-        margin-top 20px
-        margin-bottom 20px
-        .products-multi-carousel-header
+.products-carousel-outer
+    border-bottom 1px solid white-gray
+    background white
+    .products-carousel
+        padding 26px 18px
+        h2
             color light-gray
-            padding 20px 50px
-            margin-bottom 30px
-            border-bottom 1px solid white-gray
-            flex(space-between, center)
+            padding 0 50px
+            font-size 22px
+            margin-bottom 18px
+        @media (max-width breakpoint-md)
+            &
+                padding 26px 5px
+.products-multi-carousel
+    margin-top 20px
+    margin-bottom 20px
+    .products-multi-carousel-header
+        color light-gray
+        padding 20px 50px
+        margin-bottom 30px
+        border-bottom 1px solid white-gray
+        flex(space-between, center)
+        .section-details
+            flex(flex-start, center)
+            .icon
+                font-size 30px
+            & > * + *
+                margin-left 16px
+        .links a
+            color primary-color
+        @media (max-width breakpoint-md)
             .section-details
-                flex(flex-start, center)
-                .icon
-                    font-size 30px
-                & > * + *
-                    margin-left 16px
-            .links a
-                color primary-color
-            @media (max-width breakpoint-md)
-                .section-details
-                    flex-column(flex-start, flex-start)
-                    & > * + *
-                        margin-left 0
-                        margin-top 8px
-            @media (max-width breakpoint-sm)
                 flex-column(flex-start, flex-start)
-                .links
-                    margin-top 12px
+                & > * + *
+                    margin-left 0
+                    margin-top 8px
+        @media (max-width breakpoint-sm)
+            flex-column(flex-start, flex-start)
+            .links
+                margin-top 12px

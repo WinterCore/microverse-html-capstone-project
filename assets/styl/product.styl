@@ -31,17 +31,37 @@
     .product-condition
         color primary-color
         font-weight bold
+    &.search-result
+        h3
+            color secondary-color
+            font-size 20px
+        .product-footer
+            margin-top 12px
+            flex(space-between, center)
+        p
+        time
+            color light-gray
+        .product-footer-right
+            flex()
+            & > * + *
+                margin-left 10px
     &.landscape
         display grid
         gap 20px
         grid-template-columns 1fr 2fr
         .pic-responsive
             padding-bottom 0
+            img
+                width 100%
+                height auto
         @media (max-width breakpoint-md)
             &
                 grid-template-columns 1fr
             .pic-responsive
                 height 400px
+                img
+                    height 100%
+                    width auto
     &.portrait
         border 1px solid white-gray
         padding 20px
@@ -83,7 +103,6 @@
                 z-index 15
                 bottom 32px
                 left 0
-                // left -(210px / 2 - 32px / 2)
                 width 210px
                 ul
                     background white

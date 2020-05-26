@@ -1,0 +1,39 @@
+.search-outer
+    display grid
+    grid-template-columns 1.2fr 4fr
+    max-width breakpoint-xl
+    margin 0 auto
+    .search-filter
+        color light-gray
+        padding 20px 30px 0
+        .filter-group
+            &.inline
+                flex()
+                .filter-item + .filter-item
+                    margin-left 8px
+            margin-top 10px
+            .filter-group-heading
+                font-weight bold
+                color secondary-color
+                border-bottom 1px solid white-gray
+                padding 4px 0
+                margin-bottom 10px
+            .filter-item
+                margin 8px 0
+        input[type="number"]
+            height auto
+            width 80px
+            border 1px solid white-gray
+            padding 0
+            text-align center
+    .search-results
+        border-left 1px solid white-gray
+    .search-results-heading
+        color light-gray
+        padding 16px
+        border-bottom 1px solid white-gray
+    .actual-results
+        .product
+            padding 16px
+    @media (max-width breakpoint-lg)
+        grid-template-columns 1fr
