@@ -1,3 +1,58 @@
+.search-box
+    height 50vh
+    min-height 400px
+    background-color primary-color
+    background url(../images/logo-dark.svg) 18% 50%/600px no-repeat primary-color;
+    padding 0 16px
+    .search-box-inner
+        max-width 1200px
+        width 100%
+    &.mini
+        height auto
+        min-height 0
+        padding 16px
+        display block
+            margin 0 auto
+        .search-box-heading
+            display block
+            h1
+                font-size 40px
+            p
+                text-align left
+        form
+            margin-top 20px
+    flex-column(center, center)
+    .search-box-heading
+        color white
+        flex-column(center, center)
+        h1
+            font-size 55px
+        p
+            text-align center
+    form
+        max-width breakpoint-xl
+        margin-top 50px
+        flex(center)
+        & > *
+            margin 0 2px
+            flex-grow 1
+        button
+            margin-left 12px
+            background secondary-color
+            height input-height
+            line-height input-height
+            color light-gray
+            &:hover, &:focus
+                background lighten(secondary-color, 5%)
+        @media (max-width breakpoint-md)
+            &
+                flex-column()
+                & > *
+                    margin 2px 0
+                button
+                    margin-left 0
+                    margin-top 8px
+
 .button
     color #ffffff
     background primary-color
@@ -27,7 +82,7 @@
             right -6px
             z-index 2
 
-input, select
+input:not([type="checkbox"]):not([type="radio"]), select
     height input-height
     border none
     background #fff
@@ -35,6 +90,28 @@ input, select
     &:focus
         outline 0
 
+input[type="checkbox"]
+    display none
+input[type="checkbox"] + label
+    padding 4px 0 0 28px
+    position relative
+    &::before
+        content ""
+        background white
+        border 1px solid white-gray
+        display block
+        position absolute
+        left 0
+        top 50%
+        transform translateY(-50%)
+        width 18px
+        height 18px
+        border-radius 2px
+        text-align center
+        line-height 20px
+input[type="checkbox"]:checked
+    & + label::before
+        content "✔"
 
 .pic-responsive
     display block

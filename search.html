@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microverse capstone project</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <a class="logo-outer" href="index.html">
+                    <div class="logo">
+                        <img alt="logo" src="assets/images/logo.svg" />
+                    </div>
+                    <div class="logo-text">ZATTIX</div>
+                </a>
+                <ul class="nav">
+                    <li>
+                        <a href="index.html"><i class="fas fa-home"></i> home</a>
+                        <a href="#"><i class="fas fa-layer-group"></i> collections</a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i> purchase list</a>
+                    </li>
+                </ul>
+                <a class="button" href="#">post an ad</a>
+            </div>
+            <div class="header-right">
+                <div class="icon-outer has-badge">
+                    <i class="fas fa-envelope"></i>
+                    <div class="badge">4</div>
+                </div>
+                <div class="user">
+                    John Doe
+                    <div class="avatar">
+                        <img alt="avatar" src="assets/images/avatar.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search-box mini">
+            <div class="search-box-inner">
+                <div class="search-box-heading">
+                    <h1>ZATTIX</h1>
+                    <p>Buying and selling couldn't be simpler than this!</p>
+                </div>
+                <form action="search.html">
+                    <select>
+                        <option>All Departments</option>
+                        <option>Cameras</option>
+                        <option>Laptops</option>
+                        <option>Mobile Phones</option>
+                        <option>Tablets</option>
+                    </select>
+                    <input type="text" placeholder="What are you searching for ?" />
+                    <input type="text" placeholder="Enter tags" />
+                    <button type="submit" class="button">Search</button>
+                </form>
+            </div>
+        </section>
+        <div class="search-outer">
+            <div class="search-filter">
+                <div class="filter-group inline">
+                    <div class="filter-item">
+                        <input id="rent" type="checkbox" />
+                        <label for="rent">Rent</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="ownership" type="checkbox" />
+                        <label for="ownership">Ownership</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-heading">Type</div>
+                    <div class="filter-item">
+                        <input id="entire-place" type="checkbox" />
+                        <label for="entire-place">Entire Place</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="private-room" type="checkbox" />
+                        <label for="private-room">Private Room</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="shared-room" type="checkbox" />
+                        <label for="shared-room">Shared Room</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-heading">Size</div>
+                    <div class="filter-item">
+                        <input id="rooms-small" type="checkbox" />
+                        <label for="rooms-small">2-4 Rooms</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="rooms-medium" type="checkbox" />
+                        <label for="rooms-medium">5+ Rooms</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="rooms-custom" type="checkbox" />
+                        <label for="rooms-custom">Custom</label>
+                        <input type="number" />
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-heading">Price Range</div>
+                    <div class="filter-item">
+                        <input id="price-cheapst" type="checkbox" />
+                        <label for="price-cheapst">$10 - $100</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="price-cheaper" type="checkbox" />
+                        <label for="price-cheaper">$100 - $500</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="price-normal" type="checkbox" />
+                        <label for="price-normal">$500 - $1000</label>
+                    </div>
+                    <div class="filter-item">
+                        <input id="price-expensive" type="checkbox" />
+                        <label for="price-expensive">+$1000</label>
+                    </div>
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="search-results-heading">
+                    <b>138</b> Results for <b>"Flat"</b> Search at <b>San Francisco</b> in Category <b>Real Estate</b>
+                </div>
+                <div class="actual-results">
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-1.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Very clean and cozy room</h3>
+                                <div class="product-condition">2 guests · 1 bedroom · 1 bed · 1 shared bath</div> 
+                                <p>
+                                    You’ll love my place because of the high ceilings, the views, the location, the people, and the ambiance. My place is good for couples, solo adventurers, and business travelers.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2014-11-23 00:00">23 Nov, 2014</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$20 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-2.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Jacuzzi By The Historic Giza Pyramids! 5 Min Walk</h3>
+                                <div class="product-condition">4 guests · 1 bedroom · 2 beds · 1 bath</div> 
+                                <p>
+                                    The best place to enjoy a great view of the Magical Pyramids Of Giza!!
+                                    Yes, the view and pictures are 100% real. (Be sure to check out our other listings too)
+                                    Indulge in a stunning view of all the Giza Pyramids from anywhere within this contemporary oriental studio or while relaxing in the Jacuzzi available.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2016-09-23 00:00">23 Sept, 2016</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$51 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-3.jpg" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>The Cozy Beach House</h3>
+                                <div class="product-condition">6 guests · 2 bedrooms · 3 beds · 1 bath</div> 
+                                <p>
+                                    The Cosy Beach House boasts a beachfront location with full view of the Red Sea and the desert mountains. Perfectly situated in the quiet area of Eel garden directly adjacent to one of Sinai's most treasured diving destinations.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2018-01-22 00:00">22 Jan, 2018</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$41 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-1.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Very clean and cozy room</h3>
+                                <div class="product-condition">2 guests · 1 bedroom · 1 bed · 1 shared bath</div> 
+                                <p>
+                                    You’ll love my place because of the high ceilings, the views, the location, the people, and the ambiance. My place is good for couples, solo adventurers, and business travelers.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2014-11-23 00:00">23 Nov, 2014</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$20 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-2.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Jacuzzi By The Historic Giza Pyramids! 5 Min Walk</h3>
+                                <div class="product-condition">4 guests · 1 bedroom · 2 beds · 1 bath</div> 
+                                <p>
+                                    The best place to enjoy a great view of the Magical Pyramids Of Giza!!
+                                    Yes, the view and pictures are 100% real. (Be sure to check out our other listings too)
+                                    Indulge in a stunning view of all the Giza Pyramids from anywhere within this contemporary oriental studio or while relaxing in the Jacuzzi available.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2016-09-23 00:00">23 Sept, 2016</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$51 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-3.jpg" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>The Cozy Beach House</h3>
+                                <div class="product-condition">6 guests · 2 bedrooms · 3 beds · 1 bath</div> 
+                                <p>
+                                    The Cosy Beach House boasts a beachfront location with full view of the Red Sea and the desert mountains. Perfectly situated in the quiet area of Eel garden directly adjacent to one of Sinai's most treasured diving destinations.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2018-01-22 00:00">22 Jan, 2018</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$41 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-1.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Very clean and cozy room</h3>
+                                <div class="product-condition">2 guests · 1 bedroom · 1 bed · 1 shared bath</div> 
+                                <p>
+                                    You’ll love my place because of the high ceilings, the views, the location, the people, and the ambiance. My place is good for couples, solo adventurers, and business travelers.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2014-11-23 00:00">23 Nov, 2014</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$20 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-2.webp" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>Jacuzzi By The Historic Giza Pyramids! 5 Min Walk</h3>
+                                <div class="product-condition">4 guests · 1 bedroom · 2 beds · 1 bath</div> 
+                                <p>
+                                    The best place to enjoy a great view of the Magical Pyramids Of Giza!!
+                                    Yes, the view and pictures are 100% real. (Be sure to check out our other listings too)
+                                    Indulge in a stunning view of all the Giza Pyramids from anywhere within this contemporary oriental studio or while relaxing in the Jacuzzi available.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2016-09-23 00:00">23 Sept, 2016</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$51 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product landscape search-result">
+                        <div class="product-image pic-responsive">
+                            <img alt="product image" src="assets/images/products/estate-3.jpg" />
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <h3>The Cozy Beach House</h3>
+                                <div class="product-condition">6 guests · 2 bedrooms · 3 beds · 1 bath</div> 
+                                <p>
+                                    The Cosy Beach House boasts a beachfront location with full view of the Red Sea and the desert mountains. Perfectly situated in the quiet area of Eel garden directly adjacent to one of Sinai's most treasured diving destinations.
+                                </p>
+                                <div class="product-features">
+                                    <div class="product-feature"><span>Location: </span>Round Rock, Texas, United States</div>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <time datetime="2018-01-22 00:00">22 Jan, 2018</time>
+                                <div class="product-footer-right">
+                                    <div class="button">$41 / night</div><button class="button"><i class="fas fa-shopping-cart"></i> Purchase details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="about">
+                <div class="logo"><img alt="logo" src="assets/images/logo-gray.svg" /><div class="logo-text">ZATTIX</div></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum magnam temporibus dolorum minus, est in, totam eaque aliquam itaque aliquid beatae incidunt, quidem et ad accusamus delectus sit doloribus.
+                </p>
+            </div>
+            <div class="nav-links-group">
+                <div class="nav-links-heading">categories</div>
+                <div class="nav-links-content">
+                    <ul>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Automotives</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Food & Drink</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Automotives</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Food & Drink</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="nav-links-group">
+                <div class="nav-links-heading">navigation</div>
+                <div class="nav-links-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="localization">
+                <div>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option>Sweden</option>
+                        <option>Canada</option>
+                        <option>Germany</option>
+                        <option>Brazil</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="language">Language</label>
+                    <select id="language">
+                        <option>English</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="currency">Currency</label>
+                    <select id="currency">
+                        <option>US Dollar</option>
+                        <option>Euro</option>
+                        <option>Canadian Dollar</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                Copyright 2015 Zattix.com. All Rights Reserved. Designeed by <a href="https://www.behance.net/gallery/24796463/ZATTIX">Mohammed Awad</a>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
