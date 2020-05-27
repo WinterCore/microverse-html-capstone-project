@@ -1,13 +1,17 @@
 # Microverse capstone project
 
-## Screenshots
+## Description
 
-Homepage
+This is a design implementation of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX). which is an online shop. The website consists of 2 pages, a home page, and a search page. The homepage contains a search form that is used to go to the search page and apply some filtration. and carousels for different product categories.
+The project has been implemented with HTML, Stylus, and Javascript. and it supports multiple screen sizes.
+
+
+## Screenshots
+Home page
+<br />
 
 ![screenshot](./app_screenshot1.png)
 
-<br />
-<br />
 <br />
 
 Search page
@@ -15,11 +19,9 @@ Search page
 
 ![screenshot](./app_screenshot2.png)
 
-This is a design implemenation of [ZATTIX](https://www.behance.net/gallery/24796463/ZATTIX)
-
 ## Built With
 
-- HTML, CSS
+- HTML, CSS, Stylus, Javascript
 
 ## Live Demo
 
@@ -31,9 +33,8 @@ This is a design implemenation of [ZATTIX](https://www.behance.net/gallery/24796
 To get a local copy up and running follow these simple example steps.
 
 ### Usage
-- Run `npm install`
-- Run `npm run build`
-- Open the `index.html` file
+This project uses stylus instead of css for styling. However, it already contains the compiled css code so you don't have to set up anything by yourself.
+Just open the `index.html` page.
 
 ## Commands
 - `validate-html` Validate the structure of the HTML
