@@ -25,7 +25,7 @@ Search page
 
 ## Live Demo
 
-[Live Demo Link](http://raw.githack.com/WinterCore/microverse-html-capstone-project/develop/index.html)
+[Live Demo Link](https://wintercore.github.io/microverse-html-capstone-project/)
 
 
 ## Getting Started
