@@ -1,0 +1,84 @@
+footer
+    background #fff
+    border-top 1px solid white-gray
+    margin-top 50px
+    font-size 14px
+    color light-gray
+    a
+    a:active
+        color light-gray
+    a:hover
+        color secondary-color
+
+.footer-top
+.footer-bottom
+    max-width 1200px
+    margin 0 auto
+
+.footer-top
+    padding 30px 18px
+    display grid
+    grid-template-columns 1fr 1.5fr 1fr 1.2fr
+    grid-gap 60px
+    gap 60px
+    @media (max-width breakpoint-lg)
+        grid-template-columns 1fr
+    .about
+        flex-column(center, center)
+        .logo
+            flex-vertically-centered()
+            font-size 18px
+            font-weight bold
+            img
+                width 42px
+                margin-right 8px
+        p
+            margin-top 20px
+            text-align justify
+    .nav-links-group
+        .nav-links-heading
+            text-transform uppercase
+            font-size 16px
+            color primary-color
+            font-weight bold
+            padding-bottom 10px
+            margin-bottom 10px
+            border-bottom 2px solid primary-color
+        .nav-links-content
+            flex()
+            ul
+                flex-grow 1
+                li
+                    margin 5px 0
+    .localization
+        margin-top 26px
+        div
+            flex-vertically-centered()
+        div + div
+            margin-top 16px
+        label
+            color primary-color
+            font-weight bold
+            font-size 16px
+            flex-basis 80px
+            text-align right
+            margin-right 8px
+            flex-shrink 0
+        select
+            border 1px solid white-gray
+            height input-height * .75
+            flex-grow 1
+            flex-shrink 0
+
+.footer-bottom
+    padding 20px
+    flex(space-between, center)
+    .social-links ul
+        font-size 20px
+        flex()
+        li
+            margin-right 14px
+    @media(max-width breakpoint-md)
+        display block
+        .social-links
+            margin-top 10px
